@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    border: 5px solid black;
+    margin: 2vh;
+}
+
+.display-none{
+    display: none;
+}
+
+.other-details{
+    font-size: 20px;
+    width: 40%;
+    margin: 10vh 5vh;
+}
+
+.other-details div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rule-content div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.rule-content div p{
+    max-width: 90%;
+}
+.rule-content div span{
+    margin-right: 1vh;
+    
+}
+
+
+.main-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#counter{
+    cursor: pointer;
+    position: absolute;
+    font-size: 10vh;
+    font-weight: bold;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(17, 17, 17);
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px 0px;
+    background: radial-gradient(at center center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgb(119, 119, 119) 80%), rgb(0, 0, 68);
+    z-index: 10;
+}
+
+#counter:active{
+    background: radial-gradient(at center center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgb(119, 119, 119) 80%), rgb(0, 0, 98);
+}
+
+#simon-circle{
+    display: flex;
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+    background-color: #636483;
+    position: relative;
+}
+
+
+.simon{
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    opacity: 0.3;
+    transform: scale(85%);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,1);
+    background-color: antiquewhite;
+    cursor: pointer;
+    
+}
+
+#green{
+    top: 2%;
+    left: 2%;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+#blue {
+    bottom: 2%;
+    right: 2%;
+    background-color: rgb(40, 139, 219);
+    border-bottom-right-radius: 100%;
+
+}
+
+#red {
+    top: 2%;
+    right: 2%;
+    background-color: red;
+    border-top-right-radius: 100%;
+
+}
+
+#yellow{
+    bottom: 2%;
+    left: 2%;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+
+}
+
+.active{
+    opacity: 100% !important;
+}
+
+
+
+.simonAble:hover{
+    opacity: 100%;
+}
+
+.simonAble:active{
+    opacity: 0.7;
+}
+
+.reload{
+    position: absolute;
+    height: 6vh;
+    width: 15vh;
+    border: none;
+    border-radius: 12px;
+    bottom: 8%;
+    right: 8%;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,1);
+    background-color: #636483;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.reload:active{
+    background-color: #636483d2;
+}

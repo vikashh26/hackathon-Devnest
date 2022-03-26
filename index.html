@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Say -By Vikash Sharma</title>
+</head>
+<body>
+    <section class="other-details">
+        <h1 class="rules">Rules :-</h1>
+        <div class="rule-content">
+        <div class="rule1">
+
+            <span>1. </span><p>Press the START button. Simon will give the first signal. Repeat the signal by pressing the same color lens.</p>
+        </div>
+        <div class="rule2">
+            <span>2. </span>
+            <p>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.</p>
+        </div>
+
+        <div class="rule3">
+            <span>3. </span>
+            <p>Simon will duplicate these first two signals and add one.</p>
+        </div>
+        <div class="rule4">
+            <span>4. </span>
+            <p>Continue playing as long as you can repeat each sequence of sig- nals correctly. After the 5th, 9th and 13th signals in a sequence, Simon automatically speeds up.</p>
+        </div>
+        <div class="rule5">
+            <span>5. </span>
+            <p>If you fail to repeat a sequence exactly, or if you take more than 5 seconds to repeat a signal, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.</p>
+        </div>
+        
+        </div>
+    </section>
+    <section class="main-game">
+        <div id="counter">Start</div>
+        <section id="simon-circle">
+            <div onclick="planelClicked(event.currentTarget)" id="green" class="simon simonAble"></div>
+            <div onclick="planelClicked(event.currentTarget)" id="red" class="simon simonAble"></div>
+            <div onclick="planelClicked(event.currentTarget)" id="yellow" class="simon simonAble"></div>
+            <div onclick="planelClicked(event.currentTarget)" id="blue" class="simon simonAble"></div>
+        </section>
+    </section>
+    <button id="reload" onclick="gameStart()" class="reload display-none">Restart</button>
+</body>
+<script src="script.js"></script>
+</html>
